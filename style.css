@@ -1,0 +1,114 @@
+/* Font, reset e variabili */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: rgb(221, 157, 38);
+    --green: rgb(27, 190, 27);
+    --red: rgb(179, 36, 36);
+    --lime: rgb(0, 255, 0);
+    --font: "Roboto", sans-serif;
+}
+
+/* Proprietà per il body */
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font);
+    height: 100%;
+}
+
+/* Layout riquadro principale */
+.mainbox {
+    margin: 40px 100px;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    gap: 20px;
+    width: 1200px;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lime);
+    margin-bottom: 5px;
+}
+
+#scooter {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+/* --STILE ELEMENTI-- */
+
+/* Pulsanti e barra navigazione pulsanti */
+nav {
+    text-align: center;
+    background-color: var(--lime);
+    padding: 8px;
+}
+
+nav>button {
+    padding: 1px 3px;
+}
+
+/* Sezioni monopattini */
+section {
+    color: white;
+}
+
+.charge {
+    border-radius: 5px;
+    height: 30px;
+    margin: 5px 0 20px 0;
+}
+
+.orange {
+    background-color: var(--orange);
+    width: 35%;
+}
+
+.green {
+    background-color: var(--green);
+    width: 60%;
+}
+
+.red {
+    background-color: var(--red);
+    width: 18%;
+}
+
+/* Proprietà per i testi */
+
+h1,
+label {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+label {
+    font-size: 25px;
+}
+
+p,
+h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 300;
+}
